@@ -5,16 +5,16 @@
         "version_normalized": "dev-full/stable",
         "source": {
             "type": "git",
-            "url": "https://github.com/ckeditor/ckeditor-releases.git",
-            "reference": "fd5a6ba8521135c7de6d45fe688b481c5e4ad072"
+            "url": "https://github.com/ckeditor/ckeditor4-releases.git",
+            "reference": "ce3f86d757f5caeb8c5f3e555d4959a531a1035b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/fd5a6ba8521135c7de6d45fe688b481c5e4ad072",
-            "reference": "fd5a6ba8521135c7de6d45fe688b481c5e4ad072",
+            "url": "https://api.github.com/repos/ckeditor/ckeditor4-releases/zipball/ce3f86d757f5caeb8c5f3e555d4959a531a1035b",
+            "reference": "ce3f86d757f5caeb8c5f3e555d4959a531a1035b",
             "shasum": ""
         },
-        "time": "2017-06-28T15:13:19+00:00",
+        "time": "2024-08-21T11:35:41+00:00",
         "type": "library",
         "installation-source": "source",
         "notification-url": "https://packagist.org/downloads/",
@@ -26,13 +26,14 @@
         "authors": [
             {
                 "name": "CKSource",
-                "homepage": "http://cksource.com"
+                "homepage": "https://cksource.com"
             }
         ],
         "description": "JavaScript WYSIWYG web text editor.",
-        "homepage": "http://ckeditor.com",
+        "homepage": "https://ckeditor.com/ckeditor-4/",
         "keywords": [
             "CKEditor",
+            "ckeditor4",
             "editor",
             "fckeditor",
             "html",
@@ -93,17 +94,17 @@
     },
     {
         "name": "swiftmailer/swiftmailer",
-        "version": "v5.4.8",
-        "version_normalized": "5.4.8.0",
+        "version": "v5.4.12",
+        "version_normalized": "5.4.12.0",
         "source": {
             "type": "git",
             "url": "https://github.com/swiftmailer/swiftmailer.git",
-            "reference": "9a06dc570a0367850280eefd3f1dc2da45aef517"
+            "reference": "181b89f18a90f8925ef805f950d47a7190e9b950"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/9a06dc570a0367850280eefd3f1dc2da45aef517",
-            "reference": "9a06dc570a0367850280eefd3f1dc2da45aef517",
+            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/181b89f18a90f8925ef805f950d47a7190e9b950",
+            "reference": "181b89f18a90f8925ef805f950d47a7190e9b950",
             "shasum": ""
         },
         "require": {
@@ -113,7 +114,7 @@
             "mockery/mockery": "~0.9.1",
             "symfony/phpunit-bridge": "~3.2"
         },
-        "time": "2017-05-01T15:54:03+00:00",
+        "time": "2018-07-31T09:26:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -140,11 +141,12 @@
             }
         ],
         "description": "Swiftmailer, free feature-rich PHP mailer",
-        "homepage": "http://swiftmailer.org",
+        "homepage": "https://swiftmailer.symfony.com",
         "keywords": [
             "email",
             "mail",
             "mailer"
-        ]
+        ],
+        "abandoned": "symfony/mailer"
     }
 ]
