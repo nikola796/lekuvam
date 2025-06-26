@@ -14,52 +14,6 @@ namespace App\Controllers;
 
 class AuthController
 {
-
-    /**
-     * USER LOGIN
-     */
-    // public function login()
-    // {
-
-    //     if (isset($_SESSION['username']) && $_SESSION['username'] == $_POST['username']) {
-    //         echo 'Logged';
-    //         // redirect('admin/home');
-    //     } else {
-    //         $user = new User();
-    //         $user_login = $user->userLogin();
-    //         $user_access_folders = $user->getUserAccess($user_login[0]->id);
-
-    //         foreach ($user_access_folders as $uaf) {
-    //             $ua[] = $uaf->folder_id;
-    //         }
-
-    //         if (count($user_login) == 1) {
-    //             if ($user_login[0]->active == 1) {
-    //                 $_SESSION['is_logged'] = true;
-    //                 $_SESSION['username'] = $user_login[0]->name;
-    //                 $_SESSION['user_id'] = $user_login[0]->id;
-
-    //                 //$_SESSION['section'] = $user_login[0]->section;
-    //                 $_SESSION['role'] = $user_login[0]->role;
-    //                 //$_SESSION['access'] = $ua;
-    //                 // var_dump( $_SESSION['is_logged']);
-    //                 //echo '<pre>' . print_r($_SESSION, true) . '</pre>';die();
-    //                 echo 'Logged';
-    //             } else {
-    //                 echo 'Вашият профил е деактивиран. Моля обърнете се към супурвайзор на системата';
-    //             }
-
-
-    //         } else {
-    //             echo 'Подадената от Вас комбинация потребител-парола не е открита';
-    //         }
-    //     }
-
-    // }
-
-    /**
-     * USER LOGOUT
-     */
     public function logout()
     {
 
