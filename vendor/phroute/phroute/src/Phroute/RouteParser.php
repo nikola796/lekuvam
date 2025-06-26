@@ -75,7 +75,7 @@ class RouteParser {
                 'value'     => $route
             );
 
-            return array(array($route), array($reverse));
+            return [[$route], array($reverse)];
         }
 
         foreach ($matches as $set) {
@@ -108,7 +108,7 @@ class RouteParser {
 
         $this->staticParts($route, strlen($route));
 
-        return array(array(implode('', $this->parts), $this->variables), array_values($this->reverseParts));
+        return [[implode('', $this->parts), $this->variables], array_values($this->reverseParts)];
     }
 
     /**

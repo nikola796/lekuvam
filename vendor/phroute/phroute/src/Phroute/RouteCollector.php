@@ -13,9 +13,9 @@ class RouteCollector {
     
     private $routeParser;
     private $filters;
-    private $staticRoutes = array();
-    private $regexToRoutesMap = array();
-    private $reverse = array();
+    private $staticRoutes = [];
+    private $regexToRoutesMap = [];
+    private $reverse = [];
     
     private $globalFilters = array();
     
@@ -229,10 +229,10 @@ class RouteCollector {
     {
         if (empty($this->regexToRoutesMap))
         {
-            return array($this->staticRoutes, array());
+            return [$this->staticRoutes, []];
         }
 
-        return array($this->staticRoutes, $this->generateVariableRouteData());
+        return [$this->staticRoutes, $this->generateVariableRouteData()];
     }
 
     private function generateVariableRouteData()
@@ -250,8 +250,8 @@ class RouteCollector {
 
     private function processChunk($regexToRoutesMap)
     {
-        $routeMap = array();
-        $regexes = array();
+        $routeMap = [];
+        $regexes = [];
         $numGroups = 0;
         foreach ($regexToRoutesMap as $regex => $routes) {
             $firstRoute = reset($routes);
@@ -268,6 +268,6 @@ class RouteCollector {
         }
 
         $regex = '~^(?|' . implode('|', $regexes) . ')$~';
-        return array('regex' => $regex, 'routeMap' => $routeMap);
+        return ['regex' => $regex, 'routeMap' => $routeMap];
     }
 }

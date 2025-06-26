@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
+class ComposerStaticInit6f227c7e90f5c0aa9c6ca41fa91ac478
 {
     public static $files = array (
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
@@ -14,14 +14,24 @@ class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
     public static $prefixLengthsPsr4 = array (
         'A' => 
         array (
+            'App\\Models\\' => 11,
             'App\\Core\\' => 9,
+            'App\\Controllers\\' => 16,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'App\\Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/models',
+        ),
         'App\\Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core',
+        ),
+        'App\\Controllers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/controllers',
         ),
     );
 
@@ -36,10 +46,15 @@ class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
     );
 
     public static $classMap = array (
+        'App\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/controllers/AuthController.php',
+        'App\\Controllers\\CustomerController' => __DIR__ . '/../..' . '/app/controllers/CustomerController.php',
+        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
+        'App\\Controllers\\TestController' => __DIR__ . '/../..' . '/app/controllers/TestController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
+        'App\\Models\\Post' => __DIR__ . '/../..' . '/app/models/Posts.php',
+        'App\\Models\\User' => __DIR__ . '/../..' . '/app/models/User.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
-        'PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
         'Phroute\\Dispatcher' => __DIR__ . '/..' . '/phroute/phroute/src/Phroute/Dispatcher.php',
         'Phroute\\Dispatcher\\DispatcherTest' => __DIR__ . '/..' . '/phroute/phroute/test/Dispatcher/DispatcherTest.php',
         'Phroute\\Dispatcher\\Test' => __DIR__ . '/..' . '/phroute/phroute/test/Dispatcher/DispatcherTest.php',
@@ -58,10 +73,10 @@ class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6f227c7e90f5c0aa9c6ca41fa91ac478::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6f227c7e90f5c0aa9c6ca41fa91ac478::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit6f227c7e90f5c0aa9c6ca41fa91ac478::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit6f227c7e90f5c0aa9c6ca41fa91ac478::$classMap;
 
         }, null, ClassLoader::class);
     }
